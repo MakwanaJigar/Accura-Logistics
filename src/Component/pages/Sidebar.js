@@ -66,34 +66,6 @@ const Sidebar = () => {
             </ul>
           </div>
         )}
-
-        {/* Report Menu */}
-        <button
-          className="nav-link sidebar-links btn btn-link text-start w-100 d-flex align-items-center justify-content-between"
-          onClick={() => setReportOpen(!reportOpen)}
-        >
-          <span className="d-flex align-items-center gap-2">
-            <i className="fa-solid fa-file"></i>
-            Report
-          </span>
-          <i className={`fa-solid fa-angle-${reportOpen ? 'up' : 'down'}`}></i>
-        </button>
-
-        {reportOpen && (
-          <div className="ps-4">
-            <ul className="list-unstyled">
-              <li><Link className={`nav-link sidebar-links ${isActive('/logistics') ? 'active' : ''}`} to="/logistics">Logistics</Link></li>
-              <li><Link className={`nav-link sidebar-links ${isActive('/pending-logistics') ? 'active' : ''}`} to="/pending-logistics">Pending Logistics</Link></li>
-              <li><Link className={`nav-link sidebar-links ${isActive('/courier') ? 'active' : ''}`} to="/courier">Courier</Link></li>
-              <li><Link className={`nav-link sidebar-links ${isActive('/tc-section') ? 'active' : ''}`} to="/tc-section">TC Section</Link></li>
-              <li><Link className={`nav-link sidebar-links ${isActive('/w-kanbha') ? 'active' : ''}`} to="/w-kanbha">W.Kanbha</Link></li>
-              <li><Link className={`nav-link sidebar-links ${isActive('/w-kuha') ? 'active' : ''}`} to="/w-kuha">W.Kuha</Link></li>
-              <li><Link className={`nav-link sidebar-links ${isActive('/w-kubadthal') ? 'active' : ''}`} to="/w-kubadthal">W.Kubadthal</Link></li>
-              <li><Link className={`nav-link sidebar-links ${isActive('/direct-party') ? 'active' : ''}`} to="/direct-party">Direct Party</Link></li>
-              <li><Link className={`nav-link sidebar-links ${isActive('/summary') ? 'active' : ''}`} to="/summary">Summary</Link></li>
-            </ul>
-          </div>
-        )}
       </nav>
     </div>
   );
