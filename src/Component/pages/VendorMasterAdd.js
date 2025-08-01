@@ -30,7 +30,7 @@ const VendorMasterAdd = () => {
         <div className="delivery-challan-top-title-container">
           <h3 className="main-container-title">Warehouse Add</h3>
           <div className="export-addnew-btn0-container">
-            <Link to="/warehouse">Go Back</Link>
+            <Link to="/vendor">Go Back</Link>
           </div>
         </div>
 

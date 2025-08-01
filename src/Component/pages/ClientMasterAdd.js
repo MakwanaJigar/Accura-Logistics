@@ -4,7 +4,7 @@ import { useNavigate, Link, Navigate } from 'react-router-dom';
 const ClientMasterAdd = () => {
   const Navigate = useNavigate()
   const handleBackToClinetPage = () => {
-    Navigate("./client-master")
+    Navigate("./client")
   }
 
 
