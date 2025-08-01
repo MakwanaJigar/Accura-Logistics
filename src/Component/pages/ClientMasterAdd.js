@@ -46,7 +46,7 @@ const ClientMasterAdd = () => {
 
         <div className="delivery-challan-top-title-container1">
           <div className="export-addnew-btn0-container-back-btn">
-            <Link to="/client-master" className="float-right d-flex">
+            <Link to="/client" className="float-right d-flex">
               Go Back
             </Link>
           </div>

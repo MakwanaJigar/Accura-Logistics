@@ -62,7 +62,7 @@ const VendorMaster = () => {
                   <td>Amazon</td>
                   <td>Jeff Bezos</td>
                   <td>+91 7595856545</td>
-                  <td>Mombai</td>
+                  <td>Mumbai</td>
                   <td className="text-center">
                     <button className="btn btn-sm me-1">
                       <i className="fas fa-pen" />
