@@ -25,104 +25,188 @@ const FleetMasterAdd = () => {
           </div>
 
           <div className="">
-            <form className="challan-add-main-right-container py-5">
+            <form className="challan-add-main-right-container pb-3">
               <div className="border p-4 rounded client-add-box">
                 <h4 className="fw-bold mb-4 pb-2 border-bottom">Add Fleet</h4>
                 <div className="row">
                   {/* Left Column */}
-                  <div className="col-md-6">
-                    <div className="mb-3">
-                      <label className="form-label">Fleet No. / Vehicle No.*</label>
-                      <input
-                        name="driver_name"
-                        className="form-control"
-                        placeholder="Enter Fleet No. / Vehicle No."
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <label className="form-label">Brand Name*</label>
-                      <input
-                        name="driver_name"
-                        className="form-control"
-                        placeholder="Enter Brand Name"
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <label className="form-label">Fleet Size (Mt.)*</label>
-                      <input
-                        name="number"
-                        className="form-control"
-                        placeholder="Enter Fleet Size"
-                      />
-                    </div>
-                     <div className="mb-3">
-                      <label className="form-label">Fleet Capacity (Ton)*</label>
-                      <input
-                        name="phone"
-                        className="form-control"
-                        placeholder="Enter Fleet Capacity"
-                      />
-                    </div>
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Fleet No. / Vehicle No.*</label>
+                    <input
+                      name="driver_name"
+                      className="form-control"
+                      placeholder="Enter Fleet No. / Vehicle No."
+                    />
+                  </div>
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Brand Name*</label>
+                    <input
+                      name="driver_name"
+                      className="form-control"
+                      placeholder="Enter Brand Name"
+                    />
+                  </div>
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Fleet Size (Mt.)*</label>
+                    <input
+                      name="number"
+                      className="form-control"
+                      placeholder="Enter Fleet Size"
+                    />
+                  </div>
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Fleet Capacity (Ton)*</label>
+                    <input
+                      name="phone"
+                      className="form-control"
+                      placeholder="Enter Fleet Capacity"
+                    />
                   </div>
 
-                  {/* Right Column */}
-                  <div className="col-md-6">
-                   
-                    <div className="mb-3">
-                      <label className="form-label">Type Of Fleet*</label>
-                      <input type="text" name="dl_expiry" className="form-control" placeholder='Enter Fleet Type' />
-                    </div>
-
-                    <div className="mb-3">
-                      <label className="form-label">RTO Permit</label>
-                      <select className="form-select">
-                        <option value="">-- RTO Permit --</option>
-                        <option value="">PAN India Parsing</option>
-                        <option value="">Perticular State Parsing</option>
-                      </select>
-                    </div>
-
-                    <div className="mb-3">
-                      <label className="form-label">Types Of Carring Material*</label>
-                      <input type="text" name="dl_expiry" className="form-control" placeholder='Enter Material Type' />
-                    </div>
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Type Of Fleet*</label>
+                    <input type="text" name="dl_expiry" className="form-control" placeholder='Enter Fleet Type' />
                   </div>
+
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Types Of Carring Material*</label>
+                    <input type="text" name="dl_expiry" className="form-control" placeholder='Enter Material Type' />
+                  </div>
+
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">RTO Permit</label>
+                    <select className="form-select">
+                      <option value="">-- RTO Permit --</option>
+                      <option value="">Local Permit (Gujarat Only)</option>
+                      <option value="">National Permit</option>
+                    </select>
+                  </div>
+
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Upload RTO Permit</label>
+                    <input
+                      type="file"
+                      className="form-control"
+                      name="rtoPermit"
+                      accept=".pdf,.jpg,.jpeg,.png"
+                    />
+                  </div>
+
                 </div>
               </div>
 
-              {/* <div className="border p-4 rounded client-add-box">
-                <h4 className="fw-bold mb-4 pb-2 border-bottom">Payment Terms</h4>
-                <div>
-                  <div className=" mb-4 border-bottom border-1 pb-3" >
-                    <div className="card-body">
-                      <div className="row">
+              <div className="border p-4 rounded client-add-box">
+                <h4 className="fw-bold mb-4 pb-2 border-bottom">RTO</h4>
+                <div className="row">
 
-                        <div className="col-md-6">
-                          <div className="mb-3">
-                            <label className="form-label">Payment Terms</label>
-                            <select className="form-select">
-                              <option value="">Payment Terms</option>
-                              <option value="">Due On Receipt</option>
-                              <option value="">Advance</option>
-                              <option value="">15 Days Credit</option>
-                              <option value="">30 Days Credit</option>
-                            </select>
-                          </div>
-                        </div>
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">RTO Permit</label>
+                    <select className="form-select">
+                      <option value="">-- RTO Permit --</option>
+                      <option value="">Local Permit (Gujarat Only)</option>
+                      <option value="">National Permit</option>
+                    </select>
+                  </div>
 
-                        <div className="col-md-6">
-                          <div className="mb-3">
-                            <label className="form-label">GST No.*</label>
-                            <input name="gst_no" className="form-control" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Upload RTO Permit</label>
+                    <input
+                      type="file"
+                      className="form-control"
+                      name="rtoPermit"
+                      accept=".pdf,.jpg,.jpeg,.png"
+                    />
                   </div>
 
                 </div>
+              </div>
 
-              </div> */}
+              <div className="border p-4 rounded client-add-box">
+                <h4 className="fw-bold mb-4 pb-2 border-bottom">PUC</h4>
+                <div className="row">
+
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">PUC No.</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="PUC Number"
+                    />
+                  </div>
+
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">PUC Expire Date</label>
+                    <input
+                      type="date"
+                      className="form-control"
+                      placeholder="PUC Number"
+                    />
+                  </div>
+
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Upload PUC</label>
+                    <input
+                      type="file"
+                      className="form-control"
+                      name="rtoPermit"
+                      accept=".pdf,.jpg,.jpeg,.png"
+                    />
+                  </div>
+
+                </div>
+              </div>
+
+              <div className="border p-4 rounded client-add-box">
+                <h4 className="fw-bold mb-4 pb-2 border-bottom">Insurence</h4>
+                <div className="row">
+
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Insurence Expire Date</label>
+                    <input
+                      type="date"
+                      className="form-control"
+                      placeholder="PUC Number"
+                    />
+                  </div>
+
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Upload Insurence</label>
+                    <input
+                      type="file"
+                      className="form-control"
+                      name="rtoPermit"
+                      accept=".pdf,.jpg,.jpeg,.png"
+                    />
+                  </div>
+
+                </div>
+              </div>
+
+              <div className="border p-4 rounded client-add-box">
+                <h4 className="fw-bold mb-4 pb-2 border-bottom">Fitness</h4>
+                <div className="row">
+
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Fitness Expire Date</label>
+                    <input
+                      type="date"
+                      className="form-control"
+                      placeholder="PUC Number"
+                    />
+                  </div>
+
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Upload Fitness Certificate</label>
+                    <input
+                      type="file"
+                      className="form-control"
+                      name="rtoPermit"
+                      accept=".pdf,.jpg,.jpeg,.png"
+                    />
+                  </div>
+
+                </div>
+              </div>
 
               <div className="d-flex gap-3 mt-4">
                 <button type="submit" className="btn btn-submit px-4">

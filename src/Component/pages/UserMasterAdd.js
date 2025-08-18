@@ -17,7 +17,7 @@ const UserMasterAdd = () => {
           </div>
         </div>
 
-        <div className="challan-add-main-right-container py-5">
+        <div className="challan-add-main-right-container pb-3">
           <div className="form-section client-info-container">
             <h3>User</h3>
 
